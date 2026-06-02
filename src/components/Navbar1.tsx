@@ -21,7 +21,6 @@ type NavLink = {
 type Props = {
   logo: ImageProps;
   navLinks: NavLink[];
-  showPromoBanner: boolean;
 };
 
 export type Navbar1Props = React.ComponentPropsWithoutRef<"section"> &
@@ -32,7 +31,6 @@ export const Navbar1 = (props: Navbar1Props) => {
     ...Navbar1Defaults,
     ...props,
   };
-  const showPromoBanner = props.showPromoBanner ?? Navbar1Defaults.showPromoBanner;
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobile = useMediaQuery("(max-width: 991px)");
@@ -44,23 +42,15 @@ export const Navbar1 = (props: Navbar1Props) => {
       id="relume"
       className="border-border-primary fixed top-0 right-0 left-0 z-[999] flex w-full flex-col bg-white"
     >
-      {showPromoBanner && (
-        <div className="w-full border-b border-white/10 bg-[#050913] text-white">
-          <div className="flex w-full flex-wrap items-center justify-center gap-x-3 gap-y-2 px-4 py-2 text-center sm:gap-x-4 sm:px-[5%] sm:py-2.5">
-            <p className="text-xs font-semibold leading-tight sm:text-sm">
-              Zobaczmy się w Gdyni
-            </p>
-            <a
-              href="https://vibeconf.pl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-[#32eca8] bg-[#32eca8] px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-black transition-colors hover:bg-[#29d595] sm:px-3.5 sm:py-1.5 sm:text-xs"
-            >
-              Vibe Conf (20 kwietnia)
-            </a>
-          </div>
-        </div>
-      )}
+      <a
+        href="/minikurs"
+        className="group flex w-full items-center justify-center gap-2 bg-black px-4 py-2 text-center text-xs text-white transition-colors hover:bg-neutral-800 sm:text-sm"
+      >
+        <span>Darmowy mini kurs — pierwsza strona z Claude Code</span>
+        <span className="inline-flex items-center gap-1 rounded-sm bg-white px-2 py-0.5 text-xs font-medium text-black transition-transform group-hover:translate-x-0.5">
+          Sprawdź <span aria-hidden="true">→</span>
+        </span>
+      </a>
       <div className="w-full lg:px-[5%]">
         <div className="size-full lg:flex lg:items-center lg:justify-between">
           <div className="flex min-h-16 items-center justify-between px-4 md:px-[5%] md:min-h-18 lg:min-h-0 lg:px-0 lg:py-6">
@@ -221,7 +211,6 @@ export const Navbar1Defaults: Props = {
     src: "/Vibe-hero-logo.png",
     alt: "Vibe Hero Logo",
   },
-  showPromoBanner: false,
   navLinks: [
     { title: "Dlaczego Vibe Hero?", url: "#benefits" },
     { title: "Efekty", url: "#testimonials" },

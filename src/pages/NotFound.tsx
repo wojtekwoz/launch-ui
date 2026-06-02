@@ -25,7 +25,7 @@ export default function NotFound() {
                 noindex={true}
             />
             <Navbar1 logo={logo} navLinks={navLinks} />
-            <main className="pt-16 md:pt-[72px] bg-white text-black min-h-[calc(100vh-80px)] flex flex-col justify-center items-center">
+            <main className="pt-[100px] md:pt-[108px] bg-white text-black min-h-[calc(100vh-80px)] flex flex-col justify-center items-center">
                 <section className="px-4 py-16 text-center">
                     <h1 className="font-h1 mb-6 text-6xl font-bold tracking-tight text-primary md:text-8xl">
                         404
