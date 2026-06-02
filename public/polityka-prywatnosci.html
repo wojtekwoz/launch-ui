@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności — vibehero.pl/minikurs</title>
+<style>
+  @font-face {
+    font-family: "dk-01";
+    src: url("/minikurs/fonts/dk-01.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --ink: #000;
+    --bg: #F7F7F7;
+    --side: #ffffff;
+    --line: rgba(0,0,0,0.1);
+    --gutter: 12px;
+    --max-width: 1176px;
+    --grid-cols: 9;
+    --grid-line: rgba(0,0,0,0.03);
+    --content-cols: 5;
+  }
+  * { box-sizing: border-box; }
+  html {
+    background: var(--side);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "dk-01", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    line-height: 1.55;
+    position: relative;
+  }
+  .grid-bg {
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: 0 auto;
+    width: calc(100% - 2 * var(--gutter));
+    max-width: calc(var(--max-width) - 2 * var(--gutter));
+    pointer-events: none;
+    z-index: 0;
+    background-image: repeating-linear-gradient(
+      to right,
+      var(--grid-line) 0,
+      var(--grid-line) 1px,
+      transparent 1px,
+      transparent calc(100% / var(--grid-cols))
+    );
+  }
+  .grid-bg::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+    width: 1px;
+    background: var(--grid-line);
+  }
+  main { position: relative; z-index: 1; }
+  .page {
+    width: calc(100% * var(--content-cols) / var(--grid-cols));
+    margin: 0 auto;
+    padding: 80px 0 64px;
+  }
+  .back {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    opacity: 0.4;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 48px;
+    transition: opacity 0.15s ease;
+  }
+  .back:hover { opacity: 1; }
+  h1 {
+    font-size: 40px;
+    line-height: 1.12;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    text-wrap: balance;
+    margin: 0 0 16px;
+  }
+  .updated {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    opacity: 0.4;
+    margin: 0 0 48px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    text-wrap: balance;
+    margin: 56px 0 16px;
+  }
+  p {
+    margin: 0 0 16px;
+    text-wrap: pretty;
+  }
+  p strong { font-weight: 400; }
+  ul, ol {
+    margin: 0 0 16px;
+    padding-left: 24px;
+  }
+  ul li, ol li { margin-bottom: 8px; }
+  a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .data-box {
+    background: #fff;
+    padding: 24px;
+    margin: 0 0 16px;
+  }
+  .data-box p { margin: 0 0 4px; }
+  .data-box p:last-child { margin: 0; }
+  .footer {
+    margin-top: 96px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    opacity: 0.4;
+    line-height: 1.6;
+  }
+  .footer a { color: inherit; }
+
+  @media (max-width: 900px) {
+    :root { --content-cols: 7; }
+  }
+  @media (max-width: 720px) {
+    :root { --grid-cols: 3; --content-cols: 3; }
+  }
+  @media (max-width: 520px) {
+    .page { padding: 56px 0 48px; }
+    h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main>
+  <div class="page">
+
+    <a class="back" href="/minikurs">← Wróć do strony kursu</a>
+
+    <h1>Polityka prywatności</h1>
+    <p class="updated">Ostatnia aktualizacja: 24 maja 2026</p>
+
+    <h2>1. Kto jest administratorem Twoich danych</h2>
+    <div class="data-box">
+      <p>Wojciech Woźniak</p>
+      <p>Plac Górnośląski 21</p>
+      <p>81-509 Gdynia</p>
+      <p>NIP: 5892053591</p>
+    </div>
+    <p>W sprawach związanych z Twoimi danymi napisz na: <a href="mailto:yo@wozu.co">yo@wozu.co</a>.</p>
+
+    <h2>2. Jakie dane zbieramy i po co</h2>
+    <p>Gdy zapisujesz się na 5-dniowy kurs mailowy „Pierwsza strona z Claude Code", zbieram:</p>
+    <ul>
+      <li><strong>Imię</strong> — żeby zwracać się do Ciebie po imieniu w mailach.</li>
+      <li><strong>Adres email</strong> — żeby wysyłać Ci 5 lekcji kursu oraz, po jego zakończeniu, 1–2 maile informujące o pełnym kursie Claude Code Starter.</li>
+    </ul>
+    <p>Podstawa prawna: Twoja zgoda (art. 6 ust. 1 lit. a RODO), wyrażona przez zapisanie się przez formularz na stronie.</p>
+
+    <h2>3. Jak długo przechowuję dane</h2>
+    <p>Trzymam Twoje dane na liście mailingowej, dopóki sam się nie wypiszesz. W każdym mailu znajdziesz link „wypisz się". Po wypisaniu dane są usuwane w ciągu 30 dni.</p>
+
+    <h2>4. Komu przekazuję Twoje dane</h2>
+    <p>Korzystam z dwóch zewnętrznych narzędzi, które przetwarzają Twoje dane w moim imieniu:</p>
+    <ul>
+      <li><strong>MailerLite</strong> — przechowuje listę subskrybentów i wysyła maile z kursem. Dane przechowywane są zgodnie z polityką MailerLite (<a href="https://www.mailerlite.com/legal/privacy-policy" target="_blank" rel="noopener">mailerlite.com/legal/privacy-policy</a>).</li>
+      <li><strong>Umami</strong> — anonimowa analityka odwiedzin strony. Umami nie używa cookies i nie zbiera danych osobowych — gromadzi tylko zagregowane statystyki (liczba wejść, źródła ruchu, kraj, urządzenie). Więcej: <a href="https://umami.is/docs/faq" target="_blank" rel="noopener">umami.is/docs/faq</a>.</li>
+    </ul>
+    <p>Nie sprzedaję Twoich danych ani nie przekazuję ich nikomu poza powyższymi narzędziami.</p>
+
+    <h2>5. Twoje prawa</h2>
+    <p>W każdej chwili masz prawo:</p>
+    <ul>
+      <li>wypisać się z listy mailingowej (link w każdym mailu),</li>
+      <li>poprosić o wgląd do swoich danych,</li>
+      <li>poprosić o ich poprawienie lub usunięcie,</li>
+      <li>złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl), jeśli uznasz, że przetwarzam dane niezgodnie z prawem.</li>
+    </ul>
+    <p>Żeby skorzystać z któregokolwiek z praw — napisz na <a href="mailto:yo@wozu.co">yo@wozu.co</a>.</p>
+
+    <h2>6. Cookies</h2>
+    <p>Strona <strong>vibehero.pl/minikurs</strong> nie używa cookies do śledzenia użytkowników. Umami (analityka) działa bez cookies — używa fingerprint hashy, które się resetują codziennie i nie pozwalają zidentyfikować pojedynczej osoby.</p>
+
+    <h2>7. Zmiany w polityce</h2>
+    <p>Jeśli zmienię cokolwiek w sposobie przetwarzania danych, zaktualizuję tę stronę i poinformuję subskrybentów mailem.</p>
+
+    <div class="footer">
+      © 2026 vibehero.pl · Claude i Claude Code są znakami Anthropic, PBC. Niezależny kurs.
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>

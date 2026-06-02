@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Darmowy kurs mailowy: zbuduj stronę z Claude Code w 5 dni | vibehero.pl</title>
+  <meta name="description" content="Pięciodniowy darmowy kurs mailowy po polsku. Nauczysz się stawiać własną stronę internetową z Claude Code — bez znajomości programowania. Pierwsza lekcja jutro o 8:00.">
+  <meta name="keywords" content="Claude Code, kurs Claude Code, AI coding, vibe coding, kurs programowania AI, jak zbudować stronę z AI, kurs mailowy, darmowy kurs, claude.ai">
+  <meta name="author" content="Wojciech Woźniak">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://vibehero.pl/minikurs">
+  <link rel="icon" href="/vibe-hero-favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="vibehero.pl">
+  <meta property="og:url" content="https://vibehero.pl/minikurs">
+  <meta property="og:title" content="Darmowy kurs mailowy: zbuduj stronę z Claude Code w 5 dni">
+  <meta property="og:description" content="Pięć maili z konkretami. Najkrótsza droga od pomysłu do działającej strony. Bez znajomości programowania.">
+  <meta property="og:image" content="https://vibehero.pl/og-allpages.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Darmowy kurs mailowy: zbuduj stronę z Claude Code w 5 dni">
+  <meta name="twitter:description" content="Pięć maili z konkretami. Najkrótsza droga od pomysłu do działającej strony. Bez znajomości programowania.">
+  <meta name="twitter:image" content="https://vibehero.pl/og-allpages.png">
+
+  <!-- AEO / JSON-LD: Course + FAQ + Author -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Course",
+        "name": "Zbuduj stronę z Claude Code — darmowy kurs mailowy",
+        "description": "Pięciodniowy darmowy kurs mailowy po polsku, który prowadzi od pomysłu do działającej strony internetowej zbudowanej z Claude Code, bez doświadczenia w programowaniu.",
+        "provider": {
+          "@type": "Organization",
+          "name": "vibehero.pl",
+          "url": "https://vibehero.pl",
+          "sameAs": ["https://vibehero.pl"]
+        },
+        "inLanguage": "pl",
+        "educationalLevel": "Beginner",
+        "teaches": [
+          "Praca z Claude Code",
+          "Budowanie stron internetowych z AI",
+          "Vibe coding po polsku",
+          "Publikacja strony w internecie"
+        ],
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": "Osoby bez doświadczenia w programowaniu, founderzy, marketerzy, twórcy produktów"
+        },
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "PLN",
+          "category": "Free",
+          "availability": "https://schema.org/InStock",
+          "url": "https://vibehero.pl/minikurs"
+        },
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "online",
+          "courseWorkload": "PT2H",
+          "inLanguage": "pl",
+          "instructor": {
+            "@type": "Person",
+            "name": "Wojciech Woźniak",
+            "url": "https://wozu.co",
+            "sameAs": ["https://linkedin.com/in/woz"]
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy kurs jest darmowy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Cały pięciodniowy kurs mailowy o budowaniu stron z Claude Code jest darmowy. Wystarczy zapisać się przez formularz, żeby dostać pierwszą lekcję następnego dnia rano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy muszę umieć programować, żeby ukończyć kurs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Kurs jest zaprojektowany dla osób bez doświadczenia w programowaniu. Claude Code prowadzi cię krok po kroku, a w lekcjach pokazujemy konkretne polecenia i dobre praktyki."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Co dostanę po zapisie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Następnego dnia rano dostajesz pierwszą lekcję na maila. Łącznie pięć krótkich, konkretnych maili — od pomysłu do publikacji własnej strony zbudowanej z Claude Code."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "W jakim języku jest kurs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cały kurs jest po polsku."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kto prowadzi kurs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wojciech Woźniak — buduje strony i produkty z Claude Code dla klientów (wozu.co, vibeconf.pl, tomek-staniszewski.pl)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    @font-face {
+      font-family: "dk-01";
+      src: url("/minikurs/fonts/dk-01.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --ink: #000;
+      --bg: #F7F7F7;
+      --side: #ffffff;
+      --accent: #FF4C38;
+      --accent-text: #ffffff;
+      --line: rgba(0, 0, 0, 0.1);
+      --radius: 10px;
+      --gutter: 12px;
+      --max-width: 1176px;
+      /* body cap → inner area 1152 = 9 × 128 */
+      --grid-cols: 9;
+      --grid-line: rgba(0, 0, 0, 0.03);
+      --content-cols: 5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--side);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "dk-01", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      line-height: 1.55;
+      position: relative;
+    }
+
+    /* Background grid — 9 vertical lines, capped to body inner area, centered */
+    .grid-bg {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: calc(100% - 2 * var(--gutter));
+      max-width: calc(var(--max-width) - 2 * var(--gutter));
+      pointer-events: none;
+      z-index: 0;
+      background-image: repeating-linear-gradient(to right,
+          var(--grid-line) 0,
+          var(--grid-line) 1px,
+          transparent 1px,
+          transparent calc(100% / var(--grid-cols)));
+    }
+
+    /* Right-edge line (gradient doesn't draw the last boundary) */
+    .grid-bg::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 1px;
+      background: var(--grid-line);
+    }
+
+    main,
+    .page,
+    .footer,
+    .overlay {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page {
+      width: calc(100% * var(--content-cols) / var(--grid-cols));
+      margin: 0 auto;
+      padding: 80px 0 64px;
+    }
+
+    .logo {
+      display: block;
+      height: 32px;
+      width: auto;
+      margin: 0 0 48px;
+    }
+
+    .logo img,
+    .logo svg {
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+
+    /* Small / tagline */
+    .eyebrow,
+    .micro,
+    .section-label,
+    .footer,
+    .modal .sub,
+    .field label,
+    .modal-close {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      opacity: 0.4;
+      font-weight: 400;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      opacity: 0.2;
+      margin: 0 0 24px;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 1.12;
+      letter-spacing: 0.04em;
+      font-weight: 400;
+      text-wrap: balance;
+      margin: 0 0 24px;
+    }
+
+    .promise {
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      line-height: 1.55;
+      text-wrap: pretty;
+      margin: 0 0 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--accent-text);
+      padding: 16px 28px;
+      border: none;
+      border-radius: 0;
+      font: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: transform 0.08s ease, opacity 0.15s ease;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+    }
+
+    .micro {
+      margin: 12px 0 0;
+      text-align: center;
+    }
+
+    .divider {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 72px 0;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      margin: 0 0 20px;
+    }
+
+    h2 {
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      font-weight: 400;
+      text-wrap: balance;
+      margin: 0 0 32px;
+    }
+
+    ol.points p {
+      text-wrap: pretty;
+    }
+
+    ol.points {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px;
+      counter-reset: pt;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    ol.points li {
+      counter-increment: pt;
+      background: #fff;
+      padding: 24px 24px 24px 64px;
+      position: relative;
+    }
+
+    ol.points li::before {
+      content: counter(pt);
+      position: absolute;
+      left: 24px;
+      top: 26px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 0;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ol.points strong {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    ol.points p {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      opacity: 0.4;
+    }
+
+    .footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      line-height: 1.6;
+    }
+
+    .footer a {
+      color: inherit;
+    }
+
+    /* Modal */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.18s ease;
+    }
+
+    .overlay.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal {
+      background: var(--bg);
+      max-width: 440px;
+      width: 100%;
+      padding: 32px 28px 24px;
+      border-radius: 0;
+      position: relative;
+      box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.04),
+        0 8px 16px -4px rgba(0, 0, 0, 0.08),
+        0 24px 48px -12px rgba(0, 0, 0, 0.18);
+      transform: translateY(8px);
+      transition: transform 0.18s cubic-bezier(0.2, 0, 0, 1);
+    }
+
+    .overlay.open .modal {
+      transform: translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      font: inherit;
+      font-size: 20px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.4;
+      letter-spacing: 0;
+      transition: opacity 0.15s ease, transform 0.08s ease;
+    }
+
+    .modal-close:hover {
+      opacity: 1;
+    }
+
+    .modal-close:active {
+      transform: scale(0.96);
+    }
+
+    .modal h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      font-weight: 400;
+    }
+
+    .modal .sub {
+      margin: 0 0 22px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 12px 14px;
+      font: inherit;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: #fff;
+      transition: border-color 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .field input:focus {
+      outline: none;
+      border-color: var(--ink);
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .modal .micro {
+      text-align: left;
+      margin-top: 14px;
+    }
+
+    /* Staggered enter for hero */
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .page>.logo,
+    .page>.eyebrow,
+    .page>h1,
+    .page>.promise,
+    .page>.btn,
+    .page>.micro {
+      opacity: 0;
+      animation: rise 0.5s cubic-bezier(0.2, 0, 0, 1) forwards;
+      will-change: transform, opacity;
+    }
+
+    .page>.logo {
+      animation-delay: 0ms;
+    }
+
+    .page>.eyebrow {
+      animation-delay: 80ms;
+    }
+
+    .page>h1 {
+      animation-delay: 160ms;
+    }
+
+    .page>.promise {
+      animation-delay: 240ms;
+    }
+
+    .page>.btn {
+      animation-delay: 320ms;
+    }
+
+    .page>.micro {
+      animation-delay: 400ms;
+    }
+
+    /* ---------- New rhythm sections ---------- */
+
+    /* Generic placeholder box — for assets you'll provide later */
+    .placeholder {
+      background: #ECECEC;
+      color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      padding: 24px;
+      overflow: hidden;
+    }
+
+    .placeholder span {
+      max-width: 320px;
+      opacity: 0.7;
+    }
+
+    /* Hero visual — anchors the promise */
+    .hero-visual {
+      aspect-ratio: 16 / 10;
+      margin: 56px 0 0;
+    }
+
+    /* Showcase — 3 examples between hero and program */
+    .showcase {
+      margin: 96px 0 0;
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .showcase-grid>a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.15s ease;
+    }
+
+    .showcase-grid>a:hover {
+      opacity: 0.85;
+    }
+
+    .showcase-grid .placeholder {
+      aspect-ratio: 4 / 5;
+      padding: 0;
+    }
+
+    .showcase-grid .placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .showcase-caption {
+      margin-top: 12px;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      opacity: 0.4;
+    }
+
+    /* Points — clean list, no per-lesson visuals */
+
+    /* Author — sits right under hero (replaces hero-visual) */
+    .author {
+      margin: 56px 0 0;
+      display: grid;
+      grid-template-columns: calc(100% / var(--content-cols)) 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .author-photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .author-name {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .author-name a {
+      color: inherit;
+      display: inline-flex;
+      align-items: center;
+      opacity: 0.4;
+      transition: opacity 0.15s ease;
+    }
+
+    .author-name a:hover {
+      opacity: 1;
+    }
+
+    .author-name svg {
+      display: block;
+    }
+
+    .author-bio {
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      opacity: 0.4;
+      margin: 12px 0 0;
+    }
+
+    .author-bio p {
+      margin: 0 0 10px;
+    }
+
+    .author-bio p:last-child {
+      margin-bottom: 0;
+    }
+
+    .author-bio a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* Final CTA — white block that contrasts the gray bg */
+    .final-cta {
+      background: #fff;
+      color: var(--ink);
+      margin: 96px 0 0;
+      padding: 64px 24px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      margin: 0 0 16px;
+    }
+
+    .final-cta-desc {
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      opacity: 0.4;
+      max-width: 480px;
+      margin: 0 auto 32px;
+      text-wrap: pretty;
+    }
+
+    .final-cta .btn {
+      max-width: 360px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .final-cta .micro {
+      margin-top: 16px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      :root {
+        --content-cols: 7;
+      }
+    }
+
+    @media (max-width: 720px) {
+      :root {
+        --grid-cols: 3;
+        --content-cols: 3;
+      }
+
+      .showcase-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .author {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+      }
+
+      .final-cta {
+        margin: 72px 0 0;
+        padding: 48px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .page>* {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      .overlay,
+      .modal {
+        transition: none !important;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 56px 0 48px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .divider {
+        margin: 56px 0;
+      }
+    }
+  </style>
+
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <!-- End Vercel Web Analytics -->
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2056879');
+  </script>
+  <!-- End MailerLite Universal -->
+</head>
+
+<body>
+
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <main class="page">
+
+    <a href="/" class="logo" aria-label="vibehero">
+      <!-- Wrzuć plik logo do assets/logo.svg — alternatywnie wklej tu SVG inline -->
+      <img src="/minikurs/assets/logo.svg" alt="vibehero">
+    </a>
+
+    <p class="eyebrow">Darmowy 5-dniowy kurs mailowy</p>
+
+    <h1>Naucz się budować strony z Claude Code.</h1>
+
+    <p class="promise">Pokażę Ci, jak rozmawiać z AI, żeby zbudować pierwszą stronę bez frameworków, bez dewelopera i
+      bez tworzenia kolejnej strony, która z daleka wygląda na zrobioną przez AI.</p>
+
+    <button class="btn" data-open-modal>Zapisz się na darmowy kurs</button>
+    <p class="micro">Pierwsza lekcja w skrzynce jutro rano. Bez spamu.</p>
+
+    <!-- AUTOR: zaraz pod hero, zamiast hero-visual — twarz buduje zaufanie od razu -->
+    <section class="author">
+      <img class="author-photo" src="/minikurs/assets/wojtek-photo.jpeg" alt="Wojtek Woźniak">
+      <div>
+        <p class="author-name">
+          Cześć! Jestem Wojtek Woźniak
+          <a href="https://linkedin.com/in/woz" target="_blank" rel="noopener" aria-label="LinkedIn Wojtka">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
+            </svg>
+          </a>
+        </p>
+        <div class="author-bio">
+          <p>Buduję strony internetowe od ponad 10 lat. Z AI działam już ponad 3 lata. Wdrażam rozwiązania dla siebie i
+            klientów (przykładowe strony: <a href="https://wozu.co" target="_blank" rel="noopener">wozu.co</a>, <a
+              href="https://vibeconf.pl" target="_blank" rel="noopener">vibeconf.pl</a>, <a
+              href="https://tomek-staniszewski.pl" target="_blank" rel="noopener">tomek-staniszewski.pl</a>).</p>
+          <p>Claude Code uczę, bo sam przeszedłem drogę od zera do zbudowania ponad 100 stron dla klientów. To narzędzie
+            daje możliwości, jakie kiedyś obiecywało no-code, ale nigdy ich nie dowiozło.</p>
+          <p>Pora, żebyś też zaczął w nim budować.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <p class="section-label">Jak to będzie wyglądać</p>
+    <h2>Od pomysłu do działającej strony w 5 mailach:</h2>
+
+    <ol class="points">
+      <li>
+        <strong>Instalacja Claude Code + notatnik projektu</strong>
+        <p>Uruchamiasz narzędzie i przygotowujesz kontekst, dzięki któremu AI od razu daje Ci dużo lepsze wyniki przy
+          budowaniu strony.</p>
+      </li>
+      <li>
+        <strong>Pierwsza wiadomość do AI, której efekt nie wygląda jak slop</strong>
+        <p>Pokażę Ci, jak wyglądają dobre prompty i od czego zacząć tworzenie strony, żeby od początku iść w dobrą
+          stronę.</p>
+      </li>
+      <li>
+        <strong>HTML, CSS i paczka dla AI</strong>
+        <p>Fonty, paleta kolorów, buttony, logo SVG, spacing w jednym pliku. Różnica między „strona z AI" a „strona,
+          która wygląda jak Twoja".</p>
+      </li>
+      <li>
+        <strong>Buduję z Tobą stronę na żywo</strong>
+        <p>Na ~7-minutowym Loomie przechodzimy razem przez cały proces. AI tworzy strukturę w czystym HTML i CSS, Ty
+          piszesz treść, a na końcu wspólnie domykamy detale wizualne.</p>
+      </li>
+      <li>
+        <strong>Poprawki + co dalej</strong>
+        <p>Jak wracać do strony i poprawiać ją z AI, żeby nie zepsuć tego, co już działa. Plus rzeczy, których nie
+          zmieścimy w 5 lekcjach (hosting, domena, analityka).</p>
+      </li>
+    </ol>
+
+    <!-- SHOWCASE: screeny stron Wojtka -->
+    <section class="showcase">
+      <p class="section-label">Co możesz zbudować</p>
+      <h2>Takie strony budujemy z Claude Code:</h2>
+      <div class="showcase-grid">
+        <!-- TODO: wrzuć screeny do assets/ (4:5, np. 800x1000) -->
+        <a href="https://wozu.co" target="_blank" rel="noopener">
+          <div class="placeholder"><img src="/minikurs/assets/showcase-wozu.png" alt="wozu.co"
+              onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';"><span
+              style="display:none">SCREEN wozu.co</span></div>
+          <p class="showcase-caption">wozu.co</p>
+        </a>
+        <a href="https://vibeconf.pl" target="_blank" rel="noopener">
+          <div class="placeholder"><img src="/minikurs/assets/showcase-vibeconf.png" alt="vibeconf.pl"
+              onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';"><span
+              style="display:none">SCREEN vibeconf.pl</span></div>
+          <p class="showcase-caption">vibeconf.pl</p>
+        </a>
+        <a href="https://tomek-staniszewski.pl" target="_blank" rel="noopener">
+          <div class="placeholder"><img src="/minikurs/assets/showcase-tomek.png" alt="tomek-staniszewski.pl"
+              onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';"><span
+              style="display:none">SCREEN tomek-staniszewski.pl</span></div>
+          <p class="showcase-caption">tomek-staniszewski.pl</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- FINAL CTA na białym tle z czarnym outline -->
+    <section class="final-cta">
+      <h2>Przeczytaj pierwszą lekcję, jutro o 8:00.</h2>
+      <p class="final-cta-desc">5 maili z konkretami. To najkrótsza droga od pomysłu do działającej strony.</p>
+      <button class="btn" data-open-modal>Stwórz swoją pierwszą stronę z Claude Code</button>
+      <p class="micro">Pierwsza lekcja w skrzynce jutro rano. Bez spamu.</p>
+    </section>
+
+    <div class="footer">
+      © 2026 vibehero.pl · <a href="/polityka-prywatnosci">Polityka prywatności</a> · Claude i Claude Code są
+      znakami Anthropic, PBC.
+    </div>
+
+  </main>
+
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Zapisz się na darmowy kurs">
+    <div class="modal">
+      <button class="modal-close" data-close-modal aria-label="Zamknij">×</button>
+      <div class="ml-embedded" data-form="FJrSF1"></div>
+      <p class="micro">Zapisując się do newslettera, wyrażasz zgodę na otrzymywanie informacji o nowościach,
+        promocjach, produktach i usługach vibehero.pl oraz claude code starter. Administratorem Twoich danych
+        osobowych będzie Ideownik Wojciech Woźniak z siedzibą w Plac Górnośląski 21, 81-509 Gdynia. Twoje dane będą
+        przetwarzane do celów związanych z wysyłką newslettera.</p>
+    </div>
+  </div>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    const openers = document.querySelectorAll('[data-open-modal]');
+    const closers = document.querySelectorAll('[data-close-modal]');
+    let lastFocus = null;
+
+    function openModal() {
+      lastFocus = document.activeElement;
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        const firstInput = overlay.querySelector('input, button:not(.modal-close)');
+        if (firstInput) firstInput.focus();
+      }, 50);
+    }
+    function closeModal() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
+    }
+    openers.forEach(b => b.addEventListener('click', openModal));
+    closers.forEach(b => b.addEventListener('click', closeModal));
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
+    });
+  </script>
+
+</body>
+
+</html>
